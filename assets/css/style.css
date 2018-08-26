@@ -1,0 +1,253 @@
+  .center {
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .btn {
+    border-radius: 0px;
+  }
+
+  .form-control {
+    border-radius: 0px;
+    margin-bottom: 10px;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #5348ab!important;
+    width: 100%;
+  }
+
+  .btn-primary a {
+    color: #fff;
+  }
+
+  .flip {
+    -webkit-perspective: 800;
+    perspective: 800;
+    position: relative;
+  }
+
+  .flip .card.flipped {
+    -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+  }
+
+  .flip .card {
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background: transparent;
+  }
+
+  .flip .card .face {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+  }
+
+  .flip .card .front {
+    position: absolute;
+    /*width: 100%;*/
+    z-index: 1;
+  }
+
+  .flip .card .back {
+    -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+  }
+
+  .inner {
+    margin: 0px !important;
+  }
+
+
+  /*loader style*/
+
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #loadersmall {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 5px solid #ccc;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #4085c5;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    /*margin: 125px 0px 0px -19px;*/
+    margin: 0px 0px 0px -19px;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* Add animation to "page content" */
+
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+
+  @-webkit-keyframes animatebottom {
+    from {
+      bottom: -100px;
+      opacity: 0
+    }
+    to {
+      bottom: 0px;
+      opacity: 1
+    }
+  }
+
+  @keyframes animatebottom {
+    from {
+      bottom: -100px;
+      opacity: 0
+    }
+    to {
+      bottom: 0;
+      opacity: 1
+    }
+  }
+
+  #list1 {
+    display: none;
+  }
+
+  form#commentform {
+    margin: 25px 0;
+  }
+
+  .container-fluid {
+    /*background: url('https://site.goigi.co/egates/wp-content/uploads/2018/04/Automated-Gates.jpg');*/
+    background-size: cover;
+  }
+
+  .panel-default {
+    background-color: rgba(255, 255, 255, 0.48);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    background: #fff !important;
+  }
+
+
+  /*********************************************************************/
+
+  .modal-dialog {
+    margin: 193px auto !important;
+  }
+
+  .quote.btn.btn-primary {
+    box-shadow: 0px 0px 10px 0px #cccccd;
+    box-shadow: 1px 1px 9px 1px #aaaaaa;
+    background-color: #2626a5 !important;
+    border-radius: 5px;
+  }
+.ajax-login-register-lite{
+ /* background: url('https://site.goigi.co/egates/wp-content/uploads/2018/04/Automated-Gates.jpg');*/
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  overflow: hidden;
+  height: auto !important;
+  }
+  #wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /** background: url('http://unsplash.it/1200x800') center center no-repeat;
+    */
+    /*background: url('https://site.goigi.co/egates/wp-content/uploads/2018/04/Automated-Gates.jpg') center center no-repeat;
+    */background-size: cover;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+      opacity: .6;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    margin-bottom: 7px !important;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+    color: #7c8c99;
+    height: 45px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  form {
+    padding: 8px;
+    /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12) !important;*/
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #5348ab!important;
+  }
+  .login-form{
+    background:#eee;
+    padding: 20px;
+  }
+  .reg-form{  
+    background:#eee;
+    padding: 20px;}
+  .lostpass{
+    background:#eee;
+    padding: 20px;
+  }
